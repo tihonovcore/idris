@@ -3,6 +3,7 @@ import Data.Vect
 import AddArithmetic
 import Equality
 
+export
 pc : (x, y: Nat) -> x + y = y + x
 pc Z y     = x_eq_x_plus_zero y
 pc (S k) y = 

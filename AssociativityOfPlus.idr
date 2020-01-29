@@ -1,10 +1,12 @@
 import Equality
 import AddArithmetic
 
+export
 pa_lemma : (a: Nat) -> a + Z = a
 pa_lemma Z = Refl
 pa_lemma (S k) = let rec = pa_lemma k in _cong (\w => S w) rec
 
+export
 pa: (n, m, k: Nat) -> (n + m) + k = n + (m + k)
 pa n m Z     =
   let lm = pa_lemma (n + m) in  --n + m + 0 = n + m

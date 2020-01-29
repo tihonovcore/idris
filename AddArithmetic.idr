@@ -4,7 +4,7 @@ x_eq_x_plus_zero Z     = Refl
 x_eq_x_plus_zero (S k) = replace {P = \w => S k = S w} (x_eq_x_plus_zero k) Refl
 
 export
-sx_eq_x_plus_one : (x: Nat) -> (S x) = x + 1
+sx_eq_x_plus_one : (x: Nat) -> (S x) = x + S Z
 sx_eq_x_plus_one Z     = Refl
 sx_eq_x_plus_one (S k) = replace {P = \w => S (S k) = S w} (sx_eq_x_plus_one k) Refl
 
