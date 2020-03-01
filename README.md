@@ -27,3 +27,17 @@
 * lemma: (k * p + 1) + (p * k + p) = (k + p * k) + (1 + p)
 * lemma: x * (k + 1) = x * k + x
 * x * y = y * x
+
+[PlusMulArithmetic](https://github.com/tihonovcore/idris/blob/master/PlusMulArithmetic.idr)
+* (w + x) + (y + z) = (w + y) + (x + z)
+* x * (y + z) = x * y + x * z
+
+[LTE](https://github.com/tihonovcore/idris/blob/master/LTE.idr)
+* LTE 3 5
+* LTE x y -> LTE x (S y)
+* LTE x y -> LTE (S x) (S y)
+* LTE x (S (y + z)) -> LTE x (y + S z)
+* LTE x y -> LTE (x + n) (y + n)
+* LTE x y -> LTE y z -> LTE x z
+* LTE x y -> LTE y x -> x = y
+* LTE x x
