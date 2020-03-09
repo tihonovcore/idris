@@ -4,6 +4,8 @@ import MulArithmetic
 import AddArithmetic
 import AssociativityOfPlus
 
+%default total
+
 distr' : (x, y, z: Nat) -> (x + y) * z = x * z + y * z
 distr' x y z = 
   let lm1 = mc (x + y) z in 
