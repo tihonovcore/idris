@@ -41,3 +41,13 @@
 * LTE x y -> LTE y z -> LTE x z
 * LTE x y -> LTE y x -> x = y
 * LTE x x
+
+# Simple arithmetic proofs
+* [(x + 2) ^ 2 = x ^ 2 + 4 \* x + 2](https://github.com/tihonovcore/idris/blob/master/v1v2v6.idr#L82)
+* [(2 \* x + 1) ^ 2 = 4 \* x ^ 2 + 4 \* x + 1](https://github.com/tihonovcore/idris/blob/master/v1v2v6.idr#L87)
+* [x ^ 2 + 1 = 1 -> x = 0](https://github.com/tihonovcore/idris/blob/master/v3v4v5v7v8.idr#L18)
+* [x < 3 -> x = 0 or x = 1 or x = 2](https://github.com/tihonovcore/idris/blob/master/v3v4v5v7v8.idr#L23)
+* [x < 3 -> x ^ 2 < 9](https://github.com/tihonovcore/idris/blob/master/v3v4v5v7v8.idr#L28)
+* [x ^ 2 + x ^ 2 + x ^ 2 + x ^ 2 = 4 * x ^ 2](https://github.com/tihonovcore/idris/blob/master/v1v2v6.idr#L94)
+* [x >= 1 -> x < 2 -> x = 1](https://github.com/tihonovcore/idris/blob/master/v3v4v5v7v8.idr#L42)
+* [x = 0 or x = 1 or x = 2 -> x < 3](https://github.com/tihonovcore/idris/blob/master/v3v4v5v7v8.idr#L51)
